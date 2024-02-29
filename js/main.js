@@ -24,7 +24,9 @@ documentLists[0].childNodes[5].after(swapFromGrey);
 itemFive.append(itemThreeOl);
 
 const itemSix = documentLists[5].querySelectorAll('.props__item_two');
-itemSix.forEach(item => documentLists[2].after(item));
+// itemSix.forEach(item => documentLists[2].after(item));
+documentLists[2].after(itemSix[1]);
+documentLists[2].after(itemSix[0]);
 
 // const itemTitle1 = itemsTitle[0].textContent;
 const itemTitle2 = itemsTitle[1].textContent;
